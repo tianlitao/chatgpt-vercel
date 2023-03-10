@@ -53,8 +53,8 @@ export default function (props: { prompts: PromptItem[] }) {
         archiveSession = parsed.archiveSession
         setSetting({
           ...defaultSetting,
-          ...parsed
-          // continuousDialogue: false
+          ...parsed,
+          continuousDialogue: false
         })
       }
       if (session && archiveSession) {
